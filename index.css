@@ -12,20 +12,18 @@
 }
 
 .nav-bar {
-    height: 15%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px;
+    padding: 50px;
     background-color: #000000;
-    position: fixed;
+    position: fixed-top;
     width: 100%;
     
 }
 .nav-items {
-    display: flex;
-    list-style-type: none;
-    margin-right: 70px;
+    margin-left: auto;
+    margin-right: 100px;
     
 }
 
@@ -48,13 +46,22 @@
     
 }
 .details-card {
-    width: 100%;
+    width: 90%;
     height: 85%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin-right: 20%;
+    padding-top: 24px;
 
     
+}
+.details{
+    margin: 0px;
+    width: 50%;
+}
+.my-name{
+    font-size: 54px;
 }
 .social-media-apps li{
     margin-right: 26px;
@@ -71,20 +78,24 @@
     margin-bottom: 12px;
 }
 .download-btn{
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     border-radius: 8px;
-    padding: 4px;
+    padding: 8px;
     font-size: 10px;
     font-weight: bold;
     color: #ffffff;
     background-color: #000000;
 }
 .role-name {
-    font-size: 19px;
+    font-size: 22px;
     font-weight: bolder;
+    margin-bottom: 8px;
 }
 .logo{
     color: #ffffff;
+    font-size: 34px;
+    font-weight: bold;
+    text-decoration: none;
 }
 .logo span {
     color: #d40700;
