@@ -1,71 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <meta charset="UTF-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 </head>
-<body>
-    <div class="bg-container">
 
-        <nav class="navbar navbar-expand-lg  nav-bar">
-            <div class="container-fluid">
-              <a class="logo" href="#"><span>Sai</span>Ram</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse " id="navbarNav" >
-                <ul class="navbar-nav nav-items">
-                    <li class="nav-item">
-                        <a href="#">Home</a> 
-                    </li>
-                    <li class="nav-item">
-                        <a href="#adoutSection">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projectsSection">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contactSection">Contact</a>
-                    </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        <!-- <nav class="nav-bar"> 
-            <img src="./assates/images/sairam.jpg" alt="profileImage" class="profile-image"> 
+<body>
+    <div class="bg-container" id="sectionHome">
+
+        <header class="nav-bar">
+        <nav class="nav-logo-btn">
             <h1 class="logo"><span>Sai</span>Ram</h1>
 
-            <ul class="nav-items">
-                <li class="nav-item">
-                    <a href="#">Home</a> 
-                </li>
-                <li class="nav-item">
-                    <a href="#adoutSection">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projectsSection">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contactSection">Contact</a>
-                </li>
-            </ul>
-           
-        </nav> -->
+            <div class="nav-list-cont">
+                <button class="hamburger-btn" onclick="onClickListIcon()"><i class="bi bi-list" id="hamburger-button"></i></button>
+            </div>
+               
+        </nav>
+        <ul class=" nav-items toggle-nav" id="nav-details">
+            <li class="nav-item">
+                <a href="#sectionHome">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#adoutSection">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#projectsSection">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contactSection">Contact</a>
+            </li>
+        </ul>
+
+    </header>
+       
         <div class="details-card">
+            <img src="./assates/images/pp.png" alt="image-of-sai" class="sairam-mobile-image">
             <div class="details">
-                <h1 class="my-name">Hi,<br> I'm Venkata<span class="name-span"> Sai Ram</span>.</h1>
+                <h1 class="my-name">Hi,<br> I'm Venkata <span class="name-span">SaiRam</span>.</h1>
                 <p class="role-name">Aspiring to be a web developer</p>
                 <p class="para-text">This is my official portfolio website it shows all details and works of mine</p>
-                <button class="download-btn">DOWNLOAD CV</button>
+                <a class="download-link" href="./assates/venkata_sai_ram_resume.pdf" download>
+                    <button class="download-btn">DOWNLOAD CV</button>
+                </a>
 
                 <ul class="social-media-apps">
-                    <li><a href="https://www.linkedin.com/in/venkata-sai-ram-k-3b89a5212" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-                    <li><a href="https://api.whatsapp.com/send?phone=919052106686&text=Hello,%20I%20have%20a%20question%20about%20https%3A%2F%2Fbannuakkabattula.tech%2F"><i class="bi bi-whatsapp"></i></a></li>
-                    <li><a href="https://www.instagram.com/venkata.sairam.142?igsh=MWUyZjZ0dmc0OXJsZQ==" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/venkata-sai-ram-k-3b89a5212" target="_blank"><i
+                                class="bi bi-linkedin"></i></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=919052106686&text=Hello,%20I%20have%20a%20question%20about%20https%3
+                            A%2F%2Fbannuakkabattula.tech%2F"
+                            target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+                    <li><a href="https://www.instagram.com/venkata.sairam.142?igsh=MWUyZjZ0dmc0OXJsZQ=="
+                            target="_blank"><i class="bi bi-instagram"></i></a></li>
                 </ul>
             </div>
             <img src="./assates/images/pp.png" alt="image-of-sai" class="sairam-image">
@@ -73,16 +65,40 @@
     </div>
 
     <div class="about-section" id="adoutSection">
-         your detailes here
+        <div class="container">
+            <div>
+                    <h3>Education</h3>
+                        <p>I'm a college dropout from an engineering college in 2016 after my 10th Standard. <br>
+                        However, started learning from distance education and finished my intermediate, and enrolled for a three-year degree course in BA Economics in 2019. </p>
+                    <h3>Hobbies</h3>
+                    <p>Playing VolleyBall. <br>Listening to podcasts and music.
+                    <br>I like to Explore New Places.
+                    <br>Watching Movies.
+                    </p>
+                            
+            </div>
+        </div>
     </div>
 
     <div class="projects-section" id="projectsSection">
-            your projects goes here
+        
     </div>
 
-    <div class="contact-section" id="contactSection">
-        your contacts goes here
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <footer class="contact-section" id="contactSection">
+        <div class="container">
+            <h1>Contact&nbsp;<span>Me</span></h1>
+            <div class="image">
+                <a href="mailto:mail2saishankar@gmail.com" target="_blank"><i class="bi bi-envelope"></i></i></a>
+                <a href="https://github.com/SaiDrive" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/bhavani-shankar-sai-peruri-061189191/" target="_blank"><i class="bi bi-telephone"></i></a>
+                <a href="https://wa.link/rup805" target="_blank"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./index.js"></script>
 </body>
+
 </html>
