@@ -1,0 +1,33 @@
+.header-card{
+        background-color: #000000;
+    .navbar-area{
+        nav{
+            h1{
+                color: #e10b0b;
+                span{
+                    color: #ffffff;
+                }
+            }
+
+            .nav-button{
+                background-color: #ffffff;
+            }
+
+            ul{
+                margin-left: auto;
+                gap: 20px;
+                li{
+                    a{
+                        text-decoration: none;
+                        color:#ffffff;
+                        font-weight: 500;
+                    }
+                    a:hover{
+                        color: #e10b0b;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
